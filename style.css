@@ -62,22 +62,35 @@ label{
     margin-left: 20px;
 }
 
-input{
+input.input{
     width: 400px;
     height: 35px;
-    padding-left: 15px;
+    padding: 10px 15px;
     border: none;
     border-radius: 20px;
     font-family: 'Acme', sans-serif;
     /* O outline: unset serve para tirar o sublinhado que aparece quando clica no input */
     outline: unset;
-
-    color: gray;
+    box-sizing: border-box;
+    color: black;
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-#inputEmail::placeholder, #inputSenha::placeholder{
+.input::placeholder{
     color: rgb(188, 187, 187);
+}
+
+/* Estado como o input ficará quando for clicado */
+.input:focus{
+    transition: 0.1s;
+    border: 3px solid #ff15a984;
+}
+
+span.span-required{
+    display: none;
+    margin: 3px 0 0 5px;
+    font-size: 15px;
+    color: black;
 }
 
 /* Botão para logar */
@@ -87,16 +100,18 @@ div.btn{
     justify-content: end;
 }
 
-button{
+button#btn-submit{
     width: 90px;
     padding: 10px;
     cursor: pointer;
     border: none;
     border-radius: 20px 0;
+    color: #ffffff;
     background-color: #F83DB4;
 }
 
-button:hover{
+button#btn-submit:hover{
+    transition: 0.5s;
     background-color: #ff00a2;
 }
 

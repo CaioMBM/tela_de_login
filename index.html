@@ -15,16 +15,18 @@
             <form class="caixas-input">
                 <div class="flex">
                     <label for="inputEmail">E-mail</label>
-                    <input type="text" id="inputEmail" placeholder="Digite seu e-mail...">
+                    <input type="email" class="input" placeholder="Digite seu e-mail...">
+                    <span class="span-required">E-mail inválido</span>
                 </div>
 
                 <div class="flex">
                     <label for="inputSenha">Senha</label>
-                    <input type="text" id="inputSenha" placeholder="Digite sua senha...">
+                    <input type="password" class="input" placeholder="Digite sua senha...">
+                    <span class="span-required">Senha incorreta</span>
                 </div>
 
                 <div class="btn">
-                    <button><a href="pages/home.html" target="_blank">Login</a></button>
+                    <button type="submit" id="btn-submit"><a href="pages/home.html">Logar</a></button>
                 </div>
             </form>
         </div>
