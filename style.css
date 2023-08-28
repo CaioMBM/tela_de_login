@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
+/* Deixa todas a letras maiúsculas */
+/* font-family: 'Holtwood One SC', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+/* Usar nos inputs */
+/* font-family: 'Acme', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Holtwood One SC', serif;
+    color: #ffffff;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #8E84FF, #9188FF, #F83DB4 85%);
+}
+
+/* Centralizando */
+section.flex-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+div.tela-login{
+    width: 630px;
+    height: 440px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    /* Efeito fosco */
+    backdrop-filter: blur(30px);
+    /* Esse -webkit é para que o efeito funcione em aparelhos da Apple */
+    -webkit-backdrop-filter: blur(30px);
+    background-color: rgba(255, 255, 255, 0.3);   
+}
+
+h1{
+    margin: 35px 0 50px 0;
+    text-align: center;
+    font-size: 60px;
+    color: #ffffff;
+}
+
+/* Caixa dos Inputs */
+form.caixas-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 30px;
+}
+
+div.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-left: 20px;
+}
+
+input{
+    width: 400px;
+    height: 35px;
+    padding-left: 8px;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Acme', sans-serif;
+
+    /* O outline: unset serve para tirar o sublinhado que aparece quando clica no input */
+    outline: unset;
+
+    color: gray;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Botão para logar */
+div.btn{
+    width: 60%;
+    display: flex;
+    justify-content: end;
+}
+
+button{
+    width: 90px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px 0;
+    background-color: #F83DB4;
+}
+
+button:hover{
+    background-color: #ff00a2;
+}
+
+a{
+    text-decoration: none;
+}

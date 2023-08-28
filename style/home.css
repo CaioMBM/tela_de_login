@@ -1,0 +1,17 @@
+*{
+    margin: o;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #8E84FF, #9188FF, #F83DB4 85%);
+}
+
+/* Centralizando */
+section.flex-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
