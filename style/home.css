@@ -1,11 +1,17 @@
 *{
     margin: o;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+        color: #ffffff;
+}
+
+html{
+    height: 100%;
 }
 
 body{
-    height: 100vh;
-    background-image: linear-gradient(to bottom, #8E84FF, #9188FF, #F83DB4 85%);
+    height: 89vh;
+    background-image: linear-gradient(to bottom, #8E84FF, #9188FF, #F83DB4 90%);
 }
 
 /* Centralizando */
@@ -14,4 +20,22 @@ section.flex-container{
     display: flex;
     justify-content: center;
     align-items: center;   
+
+    /* O column serve para deixar os itens um abaixo do outro */
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    margin-bottom: 5px;
+}
+
+img{
+    width: 50%;
+    height: 50%;
+    border: 3px solid #ffffff;
+    border-radius: 5px;
 }

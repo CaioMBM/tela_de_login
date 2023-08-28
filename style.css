@@ -65,16 +65,19 @@ label{
 input{
     width: 400px;
     height: 35px;
-    padding-left: 8px;
+    padding-left: 15px;
     border: none;
     border-radius: 20px;
     font-family: 'Acme', sans-serif;
-
     /* O outline: unset serve para tirar o sublinhado que aparece quando clica no input */
     outline: unset;
 
     color: gray;
     background-color: rgba(255, 255, 255, 0.8);
+}
+
+#inputEmail::placeholder, #inputSenha::placeholder{
+    color: rgb(188, 187, 187);
 }
 
 /* Botão para logar */
