@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/mediaquery.css">
     <link rel="shortcut icon" href="icon/icone-login.png" type="image/x-icon">
     <title>Login</title>
 </head>
@@ -16,16 +17,22 @@
                 <div class="flex">
                     <label for="inputEmail">E-mail</label>
                     <input type="email" class="input" placeholder="Digite seu e-mail...">
+
+                    <!-- Esse span vai aparecer quando for colocado um e-mail inválido. Precisa de Js -->
                     <span class="span-required">E-mail inválido</span>
                 </div>
 
                 <div class="flex">
                     <label for="inputSenha">Senha</label>
                     <input type="password" class="input" placeholder="Digite sua senha...">
+                    
+                    <!-- Esse span vai aparecer quando for colocado um e-mail inválido. Precisa de Js -->
                     <span class="span-required">Senha incorreta</span>
                 </div>
 
                 <div class="btn">
+                    <a href="pages/cadastro.html" id="btn-cadastrar" target="_blank">Cadastre-se</a>
+
                     <button type="submit" id="btn-submit"><a href="pages/home.html" target="_blank">Logar</a></button>
                 </div>
             </form>

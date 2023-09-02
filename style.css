@@ -26,14 +26,10 @@ section.flex-container{
 }
 
 div.tela-login{
-    width: 630px;
-    height: 440px;
+    width: 55%;
+    height: auto;
     border-radius: 20px;
     border: 2px solid rgba(255, 255, 255, 0.1);
-    /* Efeito fosco */
-    backdrop-filter: blur(30px);
-    /* Esse -webkit é para que o efeito funcione em aparelhos da Apple */
-    -webkit-backdrop-filter: blur(30px);
     background-color: rgba(255, 255, 255, 0.3);   
 }
 
@@ -83,6 +79,7 @@ input.input{
 /* Estado como o input ficará quando for clicado */
 .input:focus{
     transition: 0.1s;
+    scale: 1.05;
     border: 3px solid #ff15a984;
 }
 
@@ -93,25 +90,52 @@ span.span-required{
     color: black;
 }
 
-/* Botão para logar */
+/* Botão para logar e cadastrar */
 div.btn{
     width: 60%;
     display: flex;
-    justify-content: end;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    gap: 30px;
 }
 
-button#btn-submit{
-    width: 90px;
-    padding: 10px;
+a#btn-cadastrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Sem o nowrap o hífem e o que tem após vai para a linha debaixo quando a tela fica pequena */
+    white-space: nowrap;
+
+    padding: 10px 20px;
     cursor: pointer;
     border: none;
     border-radius: 20px 0;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background-color: #3d72f8;
+}
+
+a#btn-cadastrar:hover{
+    transition: 0.5s;
+    scale: 1.05;
+    background-color: #0048ff;
+}
+
+button#btn-submit{
+    text-align: center;
+    padding: 10px 20px; 
+    cursor: pointer;
+    border: none;
+    border-radius: 20px 0;
+    letter-spacing: 1px;
     color: #ffffff;
     background-color: #F83DB4;
 }
 
 button#btn-submit:hover{
     transition: 0.5s;
+    scale: 1.05;
     background-color: #ff00a2;
 }
 
